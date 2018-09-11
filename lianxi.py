@@ -14,6 +14,10 @@ application = Application([HelloWorldService], tns="spyne.example.hello",
                           in_protocol=Soap11(validator="lxml"),out_protocol=Soap11())
 if __name__ == '__main__':
 
+
+    print(123)
+    print(456)
+
     from wsgiref.simple_server import make_server
     wsgi_app = WsgiApplication(application)
     server = make_server("127.0.0.1", 8000, wsgi_app)
