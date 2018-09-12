@@ -17,6 +17,7 @@ if __name__ == '__main__':
 
     print(123)
     print(456)
+    print(zaigognsi)
 
     from wsgiref.simple_server import make_server
     wsgi_app = WsgiApplication(application)
